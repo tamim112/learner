@@ -6,47 +6,6 @@ It is written and programmable in Python. LGPLv3 License
 
 Learn more at http://web2py.com
 
-## Google App Engine deployment
-
-    cp examples/app.yaml ./
-    cp handlers/gaehandler.py ./
-
-Then edit ./app.yaml and replace "yourappname" with yourappname.
-
-## Important reminder about this GIT repo
-
-An important part of web2py is the Database Abstraction Layer (DAL). In early 2015 this was decoupled into a separate code-base ([PyDAL](https://github.com/web2py/pydal)). In terms of git, it is a sub-module of the main repository.
-
-The use of a sub-module requires a one-time use of the --recursive flag for git clone if you are cloning web2py from scratch.
-
-    git clone --recursive https://github.com/web2py/web2py.git
-
-If you have an existing repository, the commands below need to be executed at least once:
-
-    git submodule update --init --recursive
-
-PyDAL uses a separate stable release cycle to the rest of web2py. PyDAL releases will use a date-naming scheme similar to Ubuntu. Issues related to PyDAL should be reported to its separate repository.
-
-
-## Documentation (readthedocs.org)
-
-[![Docs Status](https://readthedocs.org/projects/web2py/badge/?version=latest&style=flat-square)](http://web2py.rtfd.org/)
-
-## Tests
-
-[![Build Status](https://img.shields.io/travis/web2py/web2py/master.svg?style=flat-square&label=Travis-CI)](https://app.travis-ci.com/github/web2py/web2py)
-[![MS Build Status](https://img.shields.io/appveyor/ci/web2py/web2py/master.svg?style=flat-square&label=Appveyor-CI)](https://ci.appveyor.com/project/web2py/web2py)
-[![Coverage Status](https://img.shields.io/codecov/c/github/web2py/web2py.svg?style=flat-square)](https://codecov.io/github/web2py/web2py)
-
-
-## Installation Instructions
-
-To start web2py there is NO NEED to install it. Just unzip and do:
-
-    python web2py.py
-
-That's it!!!
-
 ## web2py directory structure
 
     project/
@@ -91,6 +50,21 @@ That's it!!!
         logs/                      > log files will go in there
         deposit/                   > a place where web2py stores apps temporarily
 
-## Issues?
+## Please Check Resources Folder
+Import DATABASE
+Follow API documentation and here i attached API Collection
 
-Report issues at https://github.com/web2py/web2py/issues
+## For local installation
+Clone the repository and run the following command
+'python web2py.py'
+
+Note: application/welcome/models/config_db.py check db configuration
+
+## for docker 
+Build: docker build -t learner .
+Run : docker run learner
+
+But there is some issue i can not complete with db configuration in docker there is some lacking of my efforts. Project proper run.
+
+## Thanks and Regards TAMIM
+
