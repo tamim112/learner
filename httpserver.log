@@ -260,3 +260,16 @@
 127.0.0.1, 2024-04-02 02:50:12, GET, /welcome/static/js/web2py-bootstrap4.js, HTTP/1.1, 200, 0.000998
 127.0.0.1, 2024-04-02 02:50:12, GET, /welcome/static/images/background.jpg, HTTP/1.1, 404, 0.001036
 127.0.0.1, 2024-04-02 02:50:12, GET, /welcome/static/images/favicon.ico, HTTP/1.1, 200, 0.000000
+127.0.0.1, 2024-04-02 03:07:27, GET, /, HTTP/1.1, 303, 0.000000
+127.0.0.1, 2024-04-02 03:07:27, GET, /welcome/default/index, HTTP/1.1, 200, 0.288595
+127.0.0.1, 2024-04-02 03:07:28, GET, /welcome/static/images/background.jpg, HTTP/1.1, 404, 0.000000
+127.0.0.1, 2024-04-02 03:07:31, POST, /welcome/courses/create_course, HTTP/1.1, 200, 0.109843
+127.0.0.1, 2024-04-02 03:12:47, GET, /welcome/courses/get_courses, HTTP/1.1, 200, 0.031721
+127.0.0.1, 2024-04-02 03:16:23, GET, /welcome/courses/filter_courses, HTTP/1.1, 200, 0.016019
+127.0.0.1, 2024-04-02 03:16:36, GET, /welcome/courses/get_courses, HTTP/1.1, 200, 0.016223
+127.0.0.1, 2024-04-02 03:17:37, POST, /welcome/courses/create_course, HTTP/1.1, 200, 0.051803
+127.0.0.1, 2024-04-02 03:18:26, POST, /welcome/enrollments/enroll_student, HTTP/1.1, 200, 0.039068
+127.0.0.1, 2024-04-02 03:18:33, POST, /welcome/enrollments/enroll_student, HTTP/1.1, 200, 0.020139
+127.0.0.1, 2024-04-02 03:27:05, GET, /welcome/default/index, HTTP/1.1, 200, 0.015627
+127.0.0.1, 2024-04-02 03:27:05, GET, /welcome/static/images/background.jpg, HTTP/1.1, 404, 0.000000
+127.0.0.1, 2024-04-02 03:27:08, POST, /welcome/enrollments/enroll_student, HTTP/1.1, 200, 0.000000

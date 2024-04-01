@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "104b49f4-a2b8-4043-8681-caedba776861",
+		"name": "learning_platforms",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22873467"
+	},
+	"item": [
+		{
+			"name": "get_course",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    // \"course_id\":\"1001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/courses/get_courses",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"courses",
+						"get_courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_course_by_id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/courses/get_courses?course_id=1001",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"courses",
+						"get_courses"
+					],
+					"query": [
+						{
+							"key": "course_id",
+							"value": "1001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"ok\",\r\n    \"description\": \"Python for beginers\",\r\n    \"instructor\": \"Md. Tamim\",\r\n    \"duration\": \"150\",\r\n    \"price\": \"500.0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/courses/create_course",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"courses",
+						"create_course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "enroll_student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"course_id\": \"1001\",\r\n    \"student_name\": \"Python for beginers\",\r\n    \"enroll_date\": \"2024-04-10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/enrollments/enroll_student",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"enrollments",
+						"enroll_student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filter_courses",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Python\",\r\n    \"instructor\":\"Md. Tamim\",\r\n    \"price\":\"\",\r\n    \"duration\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/courses/filter_courses",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"courses",
+						"filter_courses"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://127.0.0.1:8000/learner"
+		}
+	]
+}
